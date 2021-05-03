@@ -20,8 +20,9 @@ const SavedBooks = () => {
 
   
 
-  const userData = data?.me;
-  refetch();
+  const userData = data?.me || {};
+  
+  //refetch();
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   
